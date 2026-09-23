@@ -14,7 +14,10 @@ chunks = chunk_text(resume_text)
 embeddings = create_embeddings(chunks)
 
 print("Number of chunks:", len(chunks))
-print("Embedding shape:", embeddings.shape)
+print("Number of embedding vectors:", len(embeddings))
 
 for index, embedding in enumerate(embeddings):
-    print(f"Chunk {index + 1} vector size:", len(embedding))
+    print(
+        f"Chunk {index + 1} vocabulary size:",
+        len(embedding)
+    )

@@ -19,6 +19,7 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
+        "https://ravikrishnabattala.netlify.app",
         "http://localhost:63342",
         "http://127.0.0.1:63342",
     ],
@@ -72,10 +73,13 @@ def chat(request: ChatRequest):
         query=request.query,
         chunks=chunks,
         embeddings=embeddings,
-        top_k=1
+        top_k=2
     )
 
-    context = results[0]["chunk"]
+    context = "\n\n".join(
+        result["chunk"]
+        for result in results
+    )
 
     response = client.chat.completions.create(
         model="openrouter/free",
@@ -83,10 +87,13 @@ def chat(request: ChatRequest):
             {
                 "role": "system",
                 "content": (
-                    "You are Ravi Krishna Battala's personal portfolio assistant. "
-                    "Answer questions using the provided resume context. "
-                    "If the answer is not present in the context, say that "
-                    "the information is not available in the provided resume."
+                    "You are Ravi Krishna Battala's personal "
+                    "portfolio assistant.\n\n"
+                    "Answer questions using the provided resume "
+                    "context.\n"
+                    "If the answer is not available in the "
+                    "provided context, say that the information "
+                    "is not available in the provided resume."
                 )
             },
             {

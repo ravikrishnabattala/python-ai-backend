@@ -1,7 +1,13 @@
-from sentence_transformers import SentenceTransformer
+import re
+from collections import Counter
 
-model = SentenceTransformer("all-MiniLM-L6-v2")
+
+def tokenize(text: str) -> list[str]:
+    return re.findall(r"\b[a-zA-Z0-9+#.-]+\b", text.lower())
 
 
 def create_embeddings(chunks: list[str]):
-    return model.encode(chunks)
+    return [
+        Counter(tokenize(chunk))
+        for chunk in chunks
+    ]
