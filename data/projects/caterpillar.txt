@@ -1,0 +1,38 @@
+Client:
+Caterpillar Inc.
+
+Projects:
+Foresight
+Customer Master
+ED-Retirement
+CUOB UI
+
+Testing focus:
+Enterprise API and UI automation.
+
+Technologies used:
+Java
+Karate
+Playwright
+Selenium
+Azure DevOps
+GitHub Actions
+AWS
+
+Responsibilities included:
+- API automation
+- UI automation
+- Authentication workflow validation
+- Backend data validation
+- Dealer portal testing
+- Functional testing
+- Regression testing
+- CI/CD automation
+- Defect validation
+
+Automation practices:
+- Page Object Model
+- BDD
+- API automation
+- UI automation
+- CI/CD integration

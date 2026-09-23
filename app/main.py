@@ -9,8 +9,8 @@ from pydantic import BaseModel
 
 from app.chunker import chunk_text
 from app.embeddings import create_embeddings
-from app.pdf_loader import load_pdf
 from app.retriever import retrieve_chunks
+from app.document_loader import load_documents
 
 load_dotenv()
 
@@ -38,14 +38,13 @@ client = OpenAI(
 # Load resume and create vectors
 # -----------------------------
 
-pdf_path = Path(__file__).parent.parent / "data" / "resume.pdf"
+data_path = Path(__file__).parent.parent / "data"
 
-resume_text = load_pdf(str(pdf_path))
+knowledge_text = load_documents(str(data_path))
 
-chunks = chunk_text(resume_text)
+chunks = chunk_text(knowledge_text)
 
 embeddings = create_embeddings(chunks)
-
 
 # -----------------------------
 # Health check
@@ -89,19 +88,20 @@ def chat(request: ChatRequest):
                 "content": (
                     "You are Ravi Krishna Battala's personal "
                     "portfolio assistant.\n\n"
-                    "Answer questions using the provided resume "
-                    "context.\n"
-                    "If the answer is not available in the "
-                    "provided context, say that the information "
-                    "is not available in the provided resume."
+                    "Answer questions using the provided portfolio "
+                    "knowledge context.\n"
+                    "If the answer is not available in the provided "
+                    "context, say that the information is not available "
+                    "in the provided portfolio knowledge."
                 )
             },
             {
                 "role": "user",
-                "content": f"""
-                    Resume context: {context}
-                    Question: {request.query} + " in 2 lines"
-                """
+                "content": (
+                    f"Knowledge context: {context}\n"
+                    f"Question: {request.query}\n"
+                    "Answer in 2 concise lines."
+                )
             }
         ]
     )

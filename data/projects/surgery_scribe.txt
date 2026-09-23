@@ -1,0 +1,42 @@
+Project:
+Surgery Scribe Validation
+
+Focus:
+Validation of an AI-powered surgery documentation workflow.
+
+Application:
+Surgery Scribe
+
+Testing flow:
+
+Original surgery note
+    ↓
+TTS audio
+    ↓
+Reference text
+    ↓
+Scribe STT
+    ↓
+AI Summary
+
+Testing includes comparing generated speech-to-text and AI-generated summaries against reference information.
+
+Validation areas:
+- Speech-to-text accuracy
+- AI summary accuracy
+- Section-level validation
+- Missing information
+- Incorrect information
+- Defect tracking
+- Regression testing
+
+Testing artifacts include:
+- Comprehensive TKA Surgery reference text
+- STT output
+- AI Summary
+- Validation results
+- Issue tracking
+- Severity
+- Impact
+
+The application was tested through the Scribe environment and included validation of AI-generated outputs against reference content.

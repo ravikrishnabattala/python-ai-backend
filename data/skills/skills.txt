@@ -1,0 +1,55 @@
+Programming Languages:
+Java
+Python
+JavaScript
+
+Test Automation:
+Karate
+Playwright
+Selenium WebDriver
+Cucumber
+TestNG
+JUnit
+
+API Testing:
+Postman
+Bruno
+REST Assured
+Karate DSL
+
+AI and LLM:
+LLM applications
+RAG
+Embeddings
+Vector retrieval
+Prompt engineering
+AI chatbot testing
+AI application testing
+
+CI/CD and DevOps:
+Azure DevOps
+Azure Pipelines
+GitHub Actions
+Docker
+
+Backend and Frameworks:
+Spring Boot
+FastAPI
+Hibernate
+
+Authentication:
+JWT
+OAuth
+
+Databases:
+PostgreSQL
+MySQL
+
+Testing Practices:
+API testing
+UI testing
+Functional testing
+Regression testing
+BDD
+Page Object Model
+Microservices validation

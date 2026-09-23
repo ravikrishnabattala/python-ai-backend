@@ -1,0 +1,21 @@
+Project:
+Picarro Chatbot – AI Chatbot Application Testing
+
+Organization:
+Codvo.ai
+
+Focus:
+AI chatbot application testing.
+
+Testing areas:
+- API testing
+- UI testing
+- Chatbot workflows
+- User interactions
+- Backend integrations
+- Functional testing
+- Regression testing
+
+The project involves validating chatbot behavior, integrations, user workflows, API responses, and application functionality.
+
+Additional testing includes chatbot conversations, CRM-related workflows, device information, case creation, troubleshooting flows, and validation of backend behavior.

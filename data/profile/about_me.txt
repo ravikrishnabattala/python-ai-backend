@@ -1,0 +1,18 @@
+Name: Ravi Krishna Battala
+
+Role: QA Automation Engineer
+
+Professional focus:
+QA Automation, API Testing, UI Automation, AI Application Testing, RAG, LLM-based applications, and automation frameworks.
+
+I have 3+ years of experience in software testing and QA automation, with experience building API and UI automation solutions for enterprise applications.
+
+My current role is QA Automation Engineer III at Codvo.ai, where I work on testing AI-powered applications, including chatbot workflows, APIs, UI interactions, integrations, and regression scenarios.
+
+I am also expanding my skills toward AI development, with practical work involving Python, FastAPI, LLMs, RAG, embeddings, retrieval, APIs, and AI application testing.
+
+Portfolio:
+https://ravikrishnabattala.netlify.app/
+
+GitHub:
+https://github.com/ravikrishnabattala

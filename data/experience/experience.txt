@@ -1,0 +1,58 @@
+QA Automation Engineer III
+Codvo.ai
+Jun 10, 2026 – Present
+
+Project:
+Picarro Chatbot – AI Chatbot Application Testing
+
+Responsibilities:
+- Perform API and UI testing for the Picarro AI chatbot application.
+- Validate chatbot workflows, integrations, and user interactions.
+- Automate functional and regression scenarios.
+- Track defects through the development lifecycle.
+
+
+QA Automation Engineer
+AI Infotech
+Client: Caterpillar Inc.
+Mar 2025 – Mar 2026
+
+Projects:
+Foresight
+Customer Master
+ED-Retirement
+CUOB UI
+
+Responsibilities:
+- Built and maintained API and UI automation using Karate, Playwright, Selenium, and Java.
+- Validated APIs, backend data, authentication workflows, and dealer-portal functionality.
+- Worked with Azure DevOps and AWS services.
+- Supported CI/CD automation and defect management.
+
+
+QA Automation Engineer
+COMTEK International Inc.
+Client: Caterpillar Inc.
+Jun 2023 – Feb 2025
+
+Projects:
+Customer Master
+ED-Retirement
+CUOB UI
+
+Responsibilities:
+- Developed API automation using Java and Karate.
+- Developed UI automation using Playwright.
+- Followed scalable automation and Page Object Model practices.
+- Automated authentication, dealer workflows, and critical business scenarios.
+- Integrated automated execution with Azure DevOps and GitHub Actions.
+- Tracked defects and validated fixes across distributed services.
+
+
+QA Automation Intern
+Mar 2023 – May 2023
+
+Responsibilities:
+- Assisted with API and UI testing.
+- Worked with Java, Selenium, and Karate DSL.
+- Supported regression and sanity testing.
